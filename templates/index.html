@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><title>Sondage Étudiant</title>
+<style>body{font-family:Arial;max-width:600px;margin:40px auto;padding:20px}input,select{width:100%;padding:10px;margin:8px 0}button{background:#8b5cf6;color:white;padding:12px;border:none;width:100%}</style>
+</head><body>
+<h1>Sondage Budget Étudiant UY1 📊</h1>
+<form action="/submit" method="POST">
+    <label>Âge:</label><input type="number" name="age" required>
+    <label>Filière:</label><input type="text" name="filiere" required>
+    <label>Budget mensuel FCFA:</label><input type="number" name="budget" required>
+    <label>Dépense principale:</label>
+    <select name="depense" required>
+        <option>Nourriture</option><option>Transport</option><option>Logement</option><option>Loisirs</option><option>Docs</option>
+    </select>
+    <button type="submit">Envoyer</button>
+</form></body></html>
